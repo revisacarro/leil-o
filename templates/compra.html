@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}Comprar Produto{% endblock %}
+{% block content %}
+<h2>Comprar {{ produto.nome }}</h2>
+<p>Preço: R$ {{ produto.preco }}</p>
+
+<form method="POST" action="{{ url_for('finalizar_compra', produto_id=produto.id) }}">
+    <label>Digite seu número de WhatsApp:</label><br>
+    <input type="text" name="whatsapp" placeholder="Ex: +5511999999999" required style="padding:8px 12px; border-radius:5px; border:1px solid #ccc; margin-top:5px;">
+    <br><br>
+    <button type="submit" style="padding:8px 15px; border-radius:5px; border:none; background:#1877f2; color:white; cursor:pointer;">Enviar</button>
+</form>
+{% endblock %}
