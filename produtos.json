@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Pastilha de Freio",
+    "preco": 150,
+    "descricao": "Alta durabilidade e segurança.",
+    "imagem": "static/imagens/pastilha.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Óleo Lubrificante",
+    "preco": 80,
+    "descricao": "Protege seu motor e aumenta desempenho.",
+    "imagem": "static/imagens/oleo.jpg"
+  }
+]

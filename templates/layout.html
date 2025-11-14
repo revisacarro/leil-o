@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Leilão Online{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#f0f2f5; margin:0; padding:0; }
+        header { background:#1877f2; color:white; padding:15px 20px; font-size:1.2em; }
+        footer { text-align:center; padding:10px; background:#ccc; margin-top:20px; }
+        a { text-decoration:none; color:white; }
+    </style>
+</head>
+<body>
+    <header>
+        Leilão Online
+    </header>
+
+    <div style="padding:20px;">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        &copy; 2025 Leilão Online
+    </footer>
+</body>
+</html>
