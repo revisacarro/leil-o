@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Obrigado!{% endblock %}
+{% block content %}
+<h2>Obrigado pela sua compra!</h2>
+<p>Recebemos seu número de WhatsApp. Entraremos em contato em breve para finalizar a compra.</p>
+<a href="{{ url_for('index') }}">
+    <button style="padding:8px 15px; border-radius:5px; border:none; background:#1877f2; color:white; cursor:pointer;">Voltar para produtos</button>
+</a>
+{% endblock %}
